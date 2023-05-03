@@ -76,7 +76,7 @@ export default function Home() {
                             software solutions.
                         </p>
                         <p className="text-md py-2 leading-8 text-gray-80 dark:text-gray-200">
-                            I offer from a wide range of services, including all.
+                            I offer from a wide range of services, including these:
                         </p>
                     </div>
                     <div className="lg:flex gap-10">
@@ -112,7 +112,7 @@ export default function Home() {
                             <Image className="mx-auto" src="/consulting.png" width={100} height={100}/>
                             <h3 className="text-lg font-medium pt-8 pb-2">Full Stack Development</h3>
                             <p className="py-2">
-                                Creating elegant designs suited for your needs.
+                                Web Application Development.
                             </p>
                             <h4 className="py-4 text-teal-600">What I can do</h4>
                             <p className="text-gray-800 py-1">Combining my knowledge of front-end technologies like
