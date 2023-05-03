@@ -25,7 +25,8 @@ export default function Home() {
                         <h1 className="text-xl font-semibold">Personal Website</h1>
                         <ul className="flex items-center">
                             <li>
-                                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl"/>
+                                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)}
+                                                     className="cursor-pointer text-2xl"/>
                             </li>
                             <li>
                                 <a className="bg-gradient-to-r  from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md ml-8"
@@ -36,17 +37,21 @@ export default function Home() {
                     <div className="text-center p-5">
                         <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl max-w-lg mx-auto dark:text-teal-400">Denys
                             Koval</h2>
-                        <h3 className="text-2xl py-2 md:text-3xl dark:text-white">Fullstack developer.</h3>
-                        <p className="text-md py-5 leading-8 text-gray-800 md:text-xl dark:text-gray-200">As a highly motivated Full Stack
+                        <h3 className="text-2xl py-2 md:text-3xl dark:text-white">Full Stack developer.</h3>
+                        <p className="text-md py-5 leading-8 text-gray-800 md:text-xl dark:text-gray-200">As a highly
+                            motivated
                             Web
                             Developer with a strong foundation in React, Django, MongoDB, and PostgreSQL, I bring
                             extensive experience in collaborative project development and a passion for continuous
                             learning.</p>
                     </div>
                     <div className={'text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400'}>
-                        <img className="w-10 h-10 icon-white" src="/twitter.png" alt="Twitter"/>
-                        <img className="w-10 h-10 icon-white" src="/linkedin.png" alt="LinkedIn"/>
-                        <img className="w-10 h-10 icon-white" src="/instagram.png" alt="Instagram"/>
+                        <a href="https://twitter.com/DenkoTwit"><img className="w-10 h-10 icon-white" src="/twitter.png"
+                                                                     alt="Twitter"/></a>
+                        <a href="https://www.linkedin.com/in/денис-undefined-32b534261"><img
+                            className="w-10 h-10 icon-white" src="/linkedin.png" alt="LinkedIn"/></a>
+                        <a href="https://www.instagram.com/denys_kowal/"><img className="w-10 h-10 icon-white"
+                                                                              src="/instagram.png" alt="Instagram"/></a>
                     </div>
                     <div
                         className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-10 overflow-hidden md:h-96 md:w-96">
@@ -60,56 +65,60 @@ export default function Home() {
                     <div>
                         <h3 className="text-3xl py-1 dark:text-white">Services I offer</h3>
                         <p className="text-md py-2 leading-8 text-gray-80 dark:text-gray-200">
-                            As a highly motivated Full Stack Web Developer with a strong foundation in <span
-                            className="text-teal-500">React</span>, <span className="text-teal-500">Django</span>, <span
-                            className="text-teal-500">MongoDB</span>, and <span
-                            className="text-teal-500">PostgreSQL</span>, I bring extensive experience in collaborative
-                            project development and a passion for continuous learning. Currently studying <span
-                            className="text-teal-500">Artificial Intelligence</span> at Lviv Polytechnic National
-                            University, I excel in teamwork, embrace new challenges, and am adept at juggling multiple
-                            tasks. My diverse interests, including volleyball and reading, have cultivated a
-                            well-rounded skill set, and my fluency in English enables me to thrive in international
-                            environments.
+                            As a full-stack developer, I offer versatile
+                            web development services using <span
+                            className="text-teal-500">React</span> and <span className="text-teal-500">Django</span>. I
+                            create responsive user interfaces with
+                            HTML, CSS, and JavaScript while ensuring secure data storage through <span
+                            className="text-teal-500">PostgreSQL</span> and <span
+                            className="text-teal-500">MongoDB</span>.
+                            My basic knowledge of algorithms, data structures, and OOP aids in delivering efficient
+                            software solutions.
                         </p>
                         <p className="text-md py-2 leading-8 text-gray-80 dark:text-gray-200">
-                            I offer from a wide range of services, including designing, programming and teaching.
+                            I offer from a wide range of services, including all.
                         </p>
                     </div>
                     <div className="lg:flex gap-10">
                         <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
                             <Image className="mx-auto" src="/design.png" width={100} height={100}/>
-                            <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
+                            <h3 className="text-lg font-medium pt-8 pb-2">Frontend Development</h3>
                             <p className="py-2">
-                                Creating elegant designs suited for your needs.
+                                Responsive Webpages.
                             </p>
-                            <h4 className="py-4 text-teal-600">Design tools I use</h4>
-                            <p className="text-gray-800 py-1">Photoshop</p>
-                            <p className="text-gray-800 py-1 ">Figma</p>
-                            <p className="text-gray-800 py-1 ">Adobe</p>
+                            <h4 className="py-4 text-teal-600">What I can do</h4>
+                            <p className="text-gray-800 py-1">Leveraging my skills in HTML, CSS, and JavaScript along
+                                with React, I craft visually appealing and highly responsive user interfaces that
+                                prioritize usability and user experience. My attention to detail and understanding of
+                                design principles help me deliver intuitive and engaging web experiences to the end
+                                users.</p>
+
                         </div>
 
 
                         <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
                             <Image className="mx-auto" src="/code.png" width={100} height={100}/>
-                            <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
+                            <h3 className="text-lg font-medium pt-8 pb-2">Backend Development</h3>
                             <p className="py-2">
-                                Creating elegant designs suited for your needs.
+                                API Development and Integration.
                             </p>
-                            <h4 className="py-4 text-teal-600">Design tools I use</h4>
-                            <p className="text-gray-800 py-1">Photoshop</p>
-                            <p className="text-gray-800 py-1 ">Figma</p>
-                            <p className="text-gray-800 py-1 ">Adobe</p>
+                            <h4 className="py-4 text-teal-600">What I can do</h4>
+                            <p className="text-gray-800 py-1">Employing Django REST Framework, I design and implement
+                                custom APIs, allowing seamless integration with various web services and applications to
+                                extend functionality and improve user experience.</p>
+
                         </div>
                         <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
                             <Image className="mx-auto" src="/consulting.png" width={100} height={100}/>
-                            <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
+                            <h3 className="text-lg font-medium pt-8 pb-2">Full Stack Development</h3>
                             <p className="py-2">
                                 Creating elegant designs suited for your needs.
                             </p>
-                            <h4 className="py-4 text-teal-600">Design tools I use</h4>
-                            <p className="text-gray-800 py-1">Photoshop</p>
-                            <p className="text-gray-800 py-1 ">Figma</p>
-                            <p className="text-gray-800 py-1 ">Adobe</p>
+                            <h4 className="py-4 text-teal-600">What I can do</h4>
+                            <p className="text-gray-800 py-1">Combining my knowledge of front-end technologies like
+                                HTML, CSS, and JavaScript with back-end expertise in Django, I offer end-to-end web
+                                development solutions that cater to a wide range of project requirements.</p>
+
                         </div>
                     </div>
                 </section>
@@ -119,16 +128,14 @@ export default function Home() {
                     <div>
                         <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
                         <p className="text-md py-2 leading-8 text-gray-80 dark:text-gray-200">
-                            As a highly motivated Full Stack Web Developer with a strong foundation in <span
-                            className="text-teal-500">React</span>, <span className="text-teal-500">Django</span>, <span
-                            className="text-teal-500">MongoDB</span>, and <span
-                            className="text-teal-500">PostgreSQL</span>, I bring extensive experience in collaborative
-                            project development and a passion for continuous learning. Currently studying <span
-                            className="text-teal-500">Artificial Intelligence</span> at Lviv Polytechnic National
-                            University, I excel in teamwork, embrace new challenges, and am adept at juggling multiple
-                            tasks. My diverse interests, including volleyball and reading, have cultivated a
-                            well-rounded skill set, and my fluency in English enables me to thrive in international
-                            environments.
+                            As a full-stack developer, I've had the chance to work on a <span
+                            className="text-teal-500">variety of projects</span>, applying my
+                            knowledge in <span
+                            className="text-teal-500">frontend</span> and <span
+                            className="text-teal-500">backend</span> technologies to develop interactive and dynamic web
+                            applications. Below are a few examples from my <span
+                            className="text-teal-500">portfolio</span> that demonstrate my range of
+                            experience and the quality of my work.
                         </p>
                     </div>
                     <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
