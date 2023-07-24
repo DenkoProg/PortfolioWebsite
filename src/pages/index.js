@@ -30,7 +30,7 @@ export default function Home() {
                             </li>
                             <li>
                                 <a className="bg-gradient-to-r  from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md ml-8"
-                                   href="#">Resume</a>
+                                   href="/resume.pdf" download="MyResume.pdf">Resume</a>
                             </li>
                         </ul>
                     </nav>
@@ -139,24 +139,30 @@ export default function Home() {
                         </p>
                     </div>
                     <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-                        <div className="basis-1/3 flex-1">
-                            <img src="/web1.png" alt="" width="100%" height="100%" className="rounded-lg object-cover"/>
+                        <div className="basis-1/3 flex-1 border-2 rounded-lg">
+                            <a href="https://www.quenic.space">
+                                <img src="/quenic.png" alt="" width="100%" height="100%" className="rounded-lg object-cover"/>
+                            </a>
                         </div>
-                        <div className="basis-1/3 flex-1">
-                            <img src="/web2.png" alt="" width="100%" height="100%" className="rounded-lg object-cover"/>
+                        <div className="basis-1/3 flex-1 border-2 rounded-lg">
+                            <a href="https://tindog-3qo4.onrender.com">
+                                <img src="/TinDog.png" alt="" width="100%" height="100%" className="rounded-lg object-cover"/>
+                            </a>
                         </div>
-                        <div className="basis-1/3 flex-1">
-                            <img src="/web3.png" alt="" width="100%" height="100%" className="rounded-lg object-cover"/>
+                        <div className="basis-1/3 flex-1 border-2 rounded-lg">
+                            <a href="#">
+                                <img src="/Restaurant.png" alt="" width="100%" height="100%" className="rounded-lg object-cover"/>
+                            </a>
                         </div>
-                        <div className="basis-1/3 flex-1">
-                            <img src="/web4.png" alt="" width="100%" height="100%" className="rounded-lg object-cover"/>
-                        </div>
-                        <div className="basis-1/3 flex-1">
-                            <img src="/web5.png" alt="" width="100%" height="100%" className="rounded-lg object-cover"/>
-                        </div>
-                        <div className="basis-1/3 flex-1">
-                            <img src="/web6.png" alt="" width="100%" height="100%" className="rounded-lg object-cover"/>
-                        </div>
+                        {/*<div className="basis-1/3 flex-1">*/}
+                        {/*    <img src="/web4.png" alt="" width="100%" height="100%" className="rounded-lg object-cover"/>*/}
+                        {/*</div>*/}
+                        {/*<div className="basis-1/3 flex-1">*/}
+                        {/*    <img src="/web5.png" alt="" width="100%" height="100%" className="rounded-lg object-cover"/>*/}
+                        {/*</div>*/}
+                        {/*<div className="basis-1/3 flex-1">*/}
+                        {/*    <img src="/web6.png" alt="" width="100%" height="100%" className="rounded-lg object-cover"/>*/}
+                        {/*</div>*/}
                     </div>
                 </section>
             </main>
