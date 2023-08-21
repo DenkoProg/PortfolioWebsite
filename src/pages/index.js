@@ -3,6 +3,8 @@ import Image from "next/image";
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {useState, useEffect} from "react";
 
+
+
 export default function Home() {
     const [darkMode, setDarkMode] = useState(false);
 
@@ -19,7 +21,7 @@ export default function Home() {
             <Head>
                 <title>Denys Koval Portfolio</title>
             </Head>
-            <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+            <main className={darkMode ? "bg-gray-900 px-10 md:px-20 lg:px-40" : "bg-white px-10 md:px-20 lg:px-40"}>
                 <section className="min-h-screen">
                     <nav className="py-10 mb-12 flex justify-between dark:text-white">
                         <h1 className="text-xl font-semibold">Personal Website</h1>
@@ -29,8 +31,8 @@ export default function Home() {
                                                      className="cursor-pointer text-2xl"/>
                             </li>
                             <li>
-                                <a className="bg-gradient-to-r  from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md ml-8"
-                                   href="/resume.pdf" download="MyResume.pdf">Resume</a>
+                                <a className="bg-gradient-to-r  from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md ml-8 no-underline"
+                                   href="/My%20Resume.pdf" download="MyResume.pdf">Resume</a>
                             </li>
                         </ul>
                     </nav>
@@ -38,12 +40,10 @@ export default function Home() {
                         <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl max-w-lg mx-auto dark:text-teal-400">Denys
                             Koval</h2>
                         <h3 className="text-2xl py-2 md:text-3xl dark:text-white">Full Stack developer.</h3>
-                        <p className="text-md py-5 leading-8 text-gray-800 md:text-xl dark:text-gray-200">As a highly
-                            motivated
-                            Web
-                            Developer with a strong foundation in React, Django, MongoDB, and PostgreSQL, I bring
-                            extensive experience in collaborative project development and a passion for continuous
-                            learning.</p>
+                        <p className="text-md py-5 leading-8 text-gray-800 md:text-xl dark:text-gray-200">
+                            As a driven individual in the field of web development, I possess a solid background in
+                            various frameworks and databases. I come with significant expertise in working on group
+                            projects and a deep enthusiasm for ongoing education.</p>
                     </div>
                     <div className={'text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400'}>
                         <a href="https://twitter.com/DenkoTwit"><img className="w-10 h-10 icon-white" src="/twitter.png"
@@ -60,6 +60,78 @@ export default function Home() {
                     </div>
                 </section>
 
+                <section className="mt-20">
+                    <div>
+                        <h3 className="text-3xl py-1 dark:text-white text-center">About my education, courses I took, and previous experience</h3>
+                        <br/>
+                        {/*<p className="text-md py-2 leading-8 text-gray-80 dark:text-gray-200 text-2xl">Courses:</p>*/}
+                        <div className="list-group">
+                            <a href="#"
+                                className="list-group-item list-group-item-action flex-column align-items-start">
+                            <div className="d-flex w-100 justify-content-between">
+                                <h5 className="mb-1">Algorithms and data structures</h5>
+                                <small className="text-muted"><span className="text-teal-600">1.5 years ago</span></small>
+                            </div>
+                            <p className="mb-1">CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.</p>
+                        </a>
+                            <a href="#"
+                               className="list-group-item list-group-item-action flex-column align-items-start">
+                                <div className="d-flex w-100 justify-content-between">
+                                    <h5 className="mb-1">Python</h5>
+                                    <small className="text-muted "><span className="text-teal-600">1 year ago</span></small>
+                                </div>
+                                <p className="mb-1">CS50's Introduction to Programming with Python (CS50P) 2022 .</p>
+                            </a>
+
+                            <a href="#"
+                               className="list-group-item list-group-item-action flex-column align-items-start">
+                                <div className="d-flex w-100 justify-content-between">
+                                    <h5 className="mb-1 ">Python for Data Science</h5>
+                                    <small className="text-muted"><span className="text-teal-600">December 2022 - January 2023</span></small>
+                                </div>
+                                <p className="mb-1">Machine Learning A-Z™: AI, Python & R</p>
+                            </a>
+                            <a href="#"
+                               className="list-group-item list-group-item-action flex-column align-items-start">
+                                <div className="d-flex w-100 justify-content-between">
+                                    <h5 className="mb-1">SQL and Databases</h5>
+                                    <small className="text-muted"><span className="text-teal-600">January 2023 - February 2023</span></small>
+                                </div>
+                                <p className="mb-1">The Complete SQL Bootcamp: Go from Zero to Hero</p>
+                            </a>
+                            <a href="#"
+                               className="list-group-item list-group-item-action flex-column align-items-start">
+                                <div className="d-flex w-100 justify-content-between">
+                                    <h5 className="mb-1">Frontend and Full Stack technologies</h5>
+                                    <small className="text-muted"><span className="text-teal-600">March 2023 - June 2023</span></small>
+                                </div>
+                                <p className="mb-1">The Complete 2023 Web Development Bootcamp. HTML, CSS, Javascript, Node, React, MongoDB</p>
+                            </a>
+                            <a href="#"
+                               className="list-group-item list-group-item-action flex-column align-items-start">
+                                <div className="d-flex w-100 justify-content-between">
+                                    <h5 className="mb-1">Django</h5>
+                                    <small className="text-muted"><span className="text-teal-600">June 2023 - Present</span></small>
+                                </div>
+                                <p className="mb-1">Explored the documentation, followed some little courses, read the book Django for APIs: Build web APIs with Python & Django and keep getting more advanced by doing personal projects.</p>
+                            </a>
+                        </div>
+                        <br/>
+                            <p className="text-md py-2 leading-8 text-gray-80 dark:text-gray-200">
+                                I also finished a year at university, where I studied how to solve <span
+                                className="text-teal-500">algorithmic problems</span>,
+                                learned about the rules of writing clean code using <span
+                                className="text-teal-500">OOP principles</span> and <span
+                                className="text-teal-500">design patterns</span>.
+                                I have mastered <span
+                                className="text-teal-500">Linear Algebra</span>, <span
+                                className="text-teal-500">Mathematical Analysis</span>, <span
+                                className="text-teal-500">Discrete Mathematics</span>, and <span
+                                className="text-teal-500">Probability Theory</span>. I also understand how a computer works thanks to the subject <span className="text-teal-500">Computer Architecture</span> and Embedded Systems Programming.
+                            </p>
+                    </div>
+                </section>
+
                 {/*// Section 2 //*/}
                 <section className="mt-20">
                     <div>
@@ -72,7 +144,7 @@ export default function Home() {
                             HTML, CSS, and JavaScript while ensuring secure data storage through <span
                             className="text-teal-500">PostgreSQL</span> and <span
                             className="text-teal-500">MongoDB</span>.
-                            My basic knowledge of algorithms, data structures, and OOP aids in delivering efficient
+                            My profound knowledge of algorithms, data structures, and OOP aids in delivering efficient
                             software solutions.
                         </p>
                         <p className="text-md py-2 leading-8 text-gray-80 dark:text-gray-200">
@@ -134,37 +206,63 @@ export default function Home() {
                             className="text-teal-500">frontend</span> and <span
                             className="text-teal-500">backend</span> technologies to develop interactive and dynamic web
                             applications. Below are a few examples from my <span
-                            className="text-teal-500">portfolio</span> that demonstrate my range of
-                            experience and the quality of my work.
+                            className="text-teal-500">portfolio</span>.
                         </p>
                     </div>
+
                     <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-                        <div className="basis-1/3 flex-1 border-2 rounded-lg">
-                            <a href="https://www.quenic.space">
-                                <img src="/quenic.png" alt="" width="100%" height="100%" className="rounded-lg object-cover"/>
-                            </a>
+                        <div className="basis-1/3 flex-1 rounded-lg">
+                            <div className="card" width="100%">
+                                <img className="card-img-top" src="/TinDog.png" alt="Card image cap" height="200px"/>
+                                <div className="card-body">
+                                    <h5 className="card-title">My first static website</h5>
+                                    <p className="card-text">Technologies used: HTML, CSS, BOOTSTRAP</p>
+                                    <br/>
+                                    <br/>
+                                    <a href="https://tindog-3qo4.onrender.com" className="btn btn-primary">Visit a website</a>
+                                </div>
+                            </div>
+                            {/*<a href="https://tindog-3qo4.onrender.com">*/}
+                            {/*    <img src="/TinDog.png" alt="" width="100%" height="100%"*/}
+                            {/*         className="rounded-lg object-cover"/>*/}
+                            {/*</a>*/}
                         </div>
-                        <div className="basis-1/3 flex-1 border-2 rounded-lg">
-                            <a href="https://tindog-3qo4.onrender.com">
-                                <img src="/TinDog.png" alt="" width="100%" height="100%" className="rounded-lg object-cover"/>
-                            </a>
+                        <div className="basis-1/3 flex-1 rounded-lg">
+                            <div className="card" width="100%">
+                                <img className="card-img-top" src="/quenic.png" alt="Card image cap" height="200px"/>
+                                <div className="card-body">
+                                    <h5 className="card-title">Project for university</h5>
+                                    <p className="card-text">Technologies used: GIT, REACT, DJANGO, POSTGRES, RESTAPI, HTML, CSS, BOOTSTRAP, AWS AMPLIFY, DOCKER, AWS EC2, SWAGGER, AWS ROUTE 53</p>
+                                    <a href="https://www.quenic.space" className="btn btn-primary">Visit a website</a>
+                                </div>
+                            </div>
+                            {/*<a href="https://www.quenic.space">*/}
+                            {/*    <img src="/quenic.png" alt="" width="100%" height="100%"*/}
+                            {/*         className="rounded-lg object-cover"/>*/}
+                            {/*</a>*/}
                         </div>
-                        <div className="basis-1/3 flex-1 border-2 rounded-lg">
-                            <a href="#">
-                                <img src="/Restaurant.png" alt="" width="100%" height="100%" className="rounded-lg object-cover"/>
-                            </a>
+
+                        {/*<p className="text-md py-2 leading-8 text-gray-80 dark:text-gray-200">*/}
+                        {/*    */}
+                        {/*</p>*/}
+
+                        <div className="basis-1/3 flex-1 rounded-lg">
+                            <div className="card" width="100%">
+                                <img className="card-img-top" src="/Restaurant.png" alt="Card image cap"/>
+                                <div className="card-body">
+                                    <h5 className="card-title">Restaurant marketplace</h5>
+                                    <p className="card-text">Technologies used: PYTHON, DJANGO, HTML, CSS, JS, EXPRESS JS, POSTGRES, GOOGLE MAPS API, PAYPAL API, GDAL</p>
+                                    <a href="https://tindog-3qo4.onrender.com" className="btn btn-primary">Visit a website</a>
+                                </div>
+                            </div>
+                            {/*<a href="#">*/}
+                            {/*    <img src="/Restaurant.png" alt="" width="100%" height="100%"*/}
+                            {/*         className="rounded-lg object-cover"/>*/}
+                            {/*</a>*/}
                         </div>
-                        {/*<div className="basis-1/3 flex-1">*/}
-                        {/*    <img src="/web4.png" alt="" width="100%" height="100%" className="rounded-lg object-cover"/>*/}
-                        {/*</div>*/}
-                        {/*<div className="basis-1/3 flex-1">*/}
-                        {/*    <img src="/web5.png" alt="" width="100%" height="100%" className="rounded-lg object-cover"/>*/}
-                        {/*</div>*/}
-                        {/*<div className="basis-1/3 flex-1">*/}
-                        {/*    <img src="/web6.png" alt="" width="100%" height="100%" className="rounded-lg object-cover"/>*/}
-                        {/*</div>*/}
                     </div>
                 </section>
+
             </main>
         </div>
     )

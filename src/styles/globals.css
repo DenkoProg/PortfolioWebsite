@@ -17,3 +17,16 @@
   filter: brightness(0) invert(1);
 }
 
+.btn.btn-primary {
+  border-color: #00B1BA;
+  background-color: #00B1BA; /*#00848C;*/
+  color: white; /* Set the text color to white to ensure readability */
+}
+
+.btn.btn-primary:hover {
+  background-color: #00848C;
+}
+
+.btn.btn-primary:active {
+  background-color: #00848C;
+}
