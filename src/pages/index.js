@@ -31,8 +31,10 @@ export default function Home() {
                                                      className="cursor-pointer text-2xl"/>
                             </li>
                             <li>
+                                {/*<a className="bg-gradient-to-r  from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md ml-8 no-underline"*/}
+                                {/*   href="/My%20Resume.pdf" download="MyResume.pdf">Resume</a>*/}
                                 <a className="bg-gradient-to-r  from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md ml-8 no-underline"
-                                   href="/My%20Resume.pdf" download="MyResume.pdf">Resume</a>
+                                   href="#Portfolio">Portfolio</a>
                             </li>
                         </ul>
                     </nav>
@@ -196,7 +198,7 @@ export default function Home() {
                 </section>
 
                 {/*//Section 3//*/}
-                <section>
+                <section id="Portfolio">
                     <div>
                         <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
                         <p className="text-md py-2 leading-8 text-gray-80 dark:text-gray-200">
@@ -248,11 +250,54 @@ export default function Home() {
 
                         <div className="basis-1/3 flex-1 rounded-lg">
                             <div className="card" width="100%">
-                                <img className="card-img-top" src="/Restaurant.png" alt="Card image cap"/>
+                                {/*<img className="card-img-top" src="/Restaurant.png" alt="Card image cap"/>*/}
+                                <video className="card-img-top" width="100%" controls>
+                                    <source src="/Restaurant_Trailer.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
                                 <div className="card-body">
                                     <h5 className="card-title">Restaurant marketplace</h5>
                                     <p className="card-text">Technologies used: PYTHON, DJANGO, HTML, CSS, JS, EXPRESS JS, POSTGRES, GOOGLE MAPS API, PAYPAL API, GDAL</p>
-                                    <a href="https://tindog-3qo4.onrender.com" className="btn btn-primary">Visit a website</a>
+                                    <div className="col-lg-4 col-md-4 inline-block">
+                                    <p className="card-text">✔️Purchase & Implement template<br/>
+                                        ✔️PostgreSQL Database Configuration<br/>
+                                        ✔️Custom user model, Media files & signals<br/>
+                                        ✔️User Registration and Django messages<br/>
+                                        ✔️Vendor registration and authentication<br/>
+                                        ✔️Token verification & Email configuration<br/>
+                                        ✔️Vendor approval by admin, dashboards<br/>
+                                        ✔️Make restaurant profile form & custom validators<br/>
+                                        <br/>
+                                        <br/>
+                                        </p></div>
+                                    <div className="col-lg-4 col-md-4 inline-block">
+                                    <p className="card-text">
+                                        ✔️Dynamic Business hours module with AJAX<br/>
+                                        ✔️Menu Builder - Category CRUD<br/>
+                                        ✔️Menu Builder - Food Items CRUD<br/>
+                                        ✔️Marketplcae implementation<br/>
+                                        ✔️Cart functionalities with AJAX request<br/>
+                                        ✔️Basic & Smart search functionalities<br/>
+                                        ✔️Location based search nearby<br/>
+                                        ✔️Get user's current location & show nearby restaurant on homepage<br/>
+                                        <br/>
+                                        <br/>
+                                        </p></div>
+                                        <div className="col-lg-4 col-md-4 inline-block">
+                                    <p className="card-text">
+                                        ✔️Dynamic Tax Module<br/>
+                                        ✔️Orders model and checkout page<br/>
+                                        ✔️Place order and generate order number<br/>
+                                        ✔️Implement PayPal payment gateway<br/>
+                                        ✔️After order functionalities<br/>
+                                        ✔️ManyToMany Relationships<br/>
+                                        ✔️Integrate Email Templates<br/>
+                                        ✔️Make the site mobile-friendly (responsive)<br/>
+                                        <br/>
+                                        <br/>
+                                        <br/>
+                                    </p></div>
+                                    <a className="btn btn-primary">This website isn't deployed yet</a>
                                 </div>
                             </div>
                             {/*<a href="#">*/}
