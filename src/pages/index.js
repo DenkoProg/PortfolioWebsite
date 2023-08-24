@@ -259,7 +259,7 @@ export default function Home() {
                                     <h5 className="card-title">Restaurant marketplace</h5>
                                     <p className="card-text">Technologies used: PYTHON, DJANGO, HTML, CSS, JS, EXPRESS JS, POSTGRES, GOOGLE MAPS API, PAYPAL API, GDAL</p>
                                     <div className="col-lg-4 col-md-4 inline-block">
-                                    <p className="card-text">✔️Purchase & Implement template<br/>
+                                    <p className="card-text">✔️Prepare the templates<br/>
                                         ✔️PostgreSQL Database Configuration<br/>
                                         ✔️Custom user model, Media files & signals<br/>
                                         ✔️User Registration and Django messages<br/>
