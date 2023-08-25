@@ -252,14 +252,15 @@ export default function Home() {
                             <div className="card" width="100%">
                                 {/*<img className="card-img-top" src="/Restaurant.png" alt="Card image cap"/>*/}
                                 <video className="card-img-top" width="100%" controls>
-                                    <source src="/Restaurant_Trailer.mp4" type="video/mp4" />
+                                    <source src="/Restaurant.mp4" type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
                                 <div className="card-body">
                                     <h5 className="card-title">Restaurant marketplace</h5>
                                     <p className="card-text">Technologies used: PYTHON, DJANGO, HTML, CSS, JS, EXPRESS JS, POSTGRES, GOOGLE MAPS API, PAYPAL API, GDAL</p>
                                     <div className="col-lg-4 col-md-4 inline-block">
-                                    <p className="card-text">✔️Prepare the templates<br/>
+                                    <p className="card-text">
+                                        ✔️Prepare the templates<br/>
                                         ✔️PostgreSQL Database Configuration<br/>
                                         ✔️Custom user model, Media files & signals<br/>
                                         ✔️User Registration and Django messages<br/>
